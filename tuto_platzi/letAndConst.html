@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let And Const</title>
+</head>
+<body>
+
+    <script>
+        var texto = "Johan"; //Variable global
+        {
+            let texto = "Villamil"; //Variable local
+            console.log(texto);
+        }
+        console.log(texto);
+        {
+            for (let i = 0 ; i <= 10 ; i++ ){
+                setTimeout(function () {
+                    console.log(i);
+                } , 100);
+            }
+        }
+        {
+            const first = 'Prueba'; //Constante
+
+            console.log(first);
+        }
+    </script>
+</body>
+</html>

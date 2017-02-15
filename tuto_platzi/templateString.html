@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template String</title>
+</head>
+<body>
+    <script>
+        //Comumente
+        var nameOne = 'Johan';
+        var textoOne = 'Este es un ' +
+                nameOne +
+                'Texto muy largo' +
+                'que no cabe en mi editor.';
+        console.log(textoOne);
+
+        //Ecmascript 2015
+
+        const name = 'Johan';
+        const names = ['Johan' , 'Armando' , 'Villamil' , 'Gaitan']
+        let texto = `
+              Este es un texto largo
+                    el nombre es ${name}, Los otros nombres son:
+              <ul>
+              ${
+                names.map(name => `<li>${name}</li>`)
+                    }
+              </ul>
+        `;
+        console.log(texto);
+    </script>
+</body>
+</html>
